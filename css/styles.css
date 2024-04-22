@@ -54,6 +54,8 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* --------------header------------------ */
@@ -80,7 +82,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 120px;
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -138,8 +139,8 @@ img {
 
 .header-contacts-list {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 122px;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .header-contacts-item {}
@@ -171,7 +172,6 @@ img {
 }
 
 /*?--------------mob-menu------------------ */
-
 .mob-menu {
     width: 100%;
     height: 100%;
@@ -315,7 +315,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -530,6 +530,8 @@ img {
 
 .portfolio-list-item {
     width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -992,6 +994,11 @@ img {
     }
 
     /* --------------header------------------ */
+
+    .header-link-logo {
+        margin-right: 120px;
+    }
+
     .header-menu-list {
         display: flex;
     }
@@ -1013,6 +1020,7 @@ img {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/tab-bg.jpg);
+        max-width: 768px;
     }
 
     @media screen and (-webkit-min-device-pixel-tatio: 2),
@@ -1066,6 +1074,7 @@ img {
 
     .portfolio-list-item {
         width: calc((100% - 1 * 24px) / 2);
+        box-shadow: none;
     }
 
     /* --------------footer------------------ */
@@ -1146,6 +1155,7 @@ img {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero-image.jpg);
+        max-width: 1440px;
     }
 
     @media screen and (-webkit-min-device-pixel-tatio: 2),
