@@ -1138,6 +1138,7 @@ img {
 
     .header-contacts-list {
         gap: 40px;
+        flex-direction: row;
     }
 
     .header-contacts-link {
